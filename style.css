@@ -78,8 +78,8 @@ body {
 }
 
 .container .advice-container .advice-icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 95%;
   background-color: #52ffa8;
@@ -97,6 +97,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 50%;
+  color: #52ffa8;
+  border: none;
+  outline: none;
 }
 
 .container .advice-container .advice-icon:hover {

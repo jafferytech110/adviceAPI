@@ -65,8 +65,8 @@ body {
         }
 
         .advice-icon {
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             position: absolute;
             top: 95%;
             background-color: $advice-number;
@@ -75,6 +75,9 @@ body {
             align-items: center;
             flex-direction: column;
             border-radius: 50%;
+            color: $advice-number;
+            border: none;
+            outline: none;
 
             &:hover {
                 transform: scale(1.4);
