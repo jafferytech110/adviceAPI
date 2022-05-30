@@ -10,15 +10,25 @@ async function getAdvice() {
     
 }
 
+//calling api function
 getAdvice()
-.then(data => {
-    adviceNumber.innerText = `advice # ${data.slip.id}`
-    advicePara.innerText = `"${data.slip.advice}"`
+.then(data=>{
+    changeAdviceContent(data)
 })
 
+//changing content of advice
+function changeAdviceContent(data) {
+    adviceNumber.innerText = `advice # ${data.slip.id}`
+    advicePara.innerText = `"${data.slip.advice}"`
+}
+
+//handling event
 newAdvice.addEventListener('click',(e)=>{
-    e.preventDefault()
     getAdvice()
+    .then(data=>{
+        changeAdviceContent(data)
+    })
 })
+
 
 
