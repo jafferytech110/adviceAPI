@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:wght@400;600;700&family=Nunito:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  color: aliceblue;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1f2632;
+  gap: 3rem;
+}
+
+.container .advice-container {
+  background-color: #323a49;
+  width: 500px;
+  min-width: 300px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.container .advice-container .advice-number {
+  color: #52ffa8;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.container .advice-container .advice-para {
+  color: #cee3e9;
+  font-weight: 800;
+  line-height: 1.6rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.container .advice-container .pattern-line {
+  content: url("./images/pattern-divider-desktop.svg");
+}
+
+.container .advice-container .advice-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 95%;
+  background-color: #52ffa8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 50%;
+}
+
+.container .advice-container .advice-icon:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-box-shadow: 0 0 0.5rem #52ffa8, inset 0 0 0.5rem #52ffa8, 0 0 2rem #52ffa8, inset 0 0 2rem #52ffa8;
+          box-shadow: 0 0 0.5rem #52ffa8, inset 0 0 0.5rem #52ffa8, 0 0 2rem #52ffa8, inset 0 0 2rem #52ffa8;
+  border: none;
+}
+
+.container .advice-container .advice-icon img {
+  width: 50%;
+  height: 50%;
+}
+
+@media screen and (max-width: 550px) {
+  .advice-container {
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .advice-container .advice-number {
+    font-size: 0.6rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+  }
+  .advice-container .advice-para {
+    line-height: 1.4rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .advice-container .pattern-line {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

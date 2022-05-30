@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:wght@400;600;700&family=Nunito:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    color: aliceblue;
+}
+
+$container-bg: hsl(218, 23%, 16%);
+$advice-container-bg: hsl(217, 19%, 24%);
+$advice-number: hsl(150, 100%, 66%);
+$advice-para: hsl(193, 38%, 86%);
+
+$mobile-device: 550px;
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $container-bg;
+    gap: 3rem;
+
+    .advice-container {
+        background-color: $advice-container-bg;
+        width: 500px;
+        min-width: 300px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+        padding-bottom: 3rem;
+        position: relative;
+
+        .advice-number {
+            color: $advice-number;
+            font-size: 0.8rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+        }
+
+        .advice-para {
+            color: $advice-para;
+            font-weight: 800;
+            line-height: 1.6rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .pattern-line {
+            content: url("./images/pattern-divider-desktop.svg");
+        }
+
+        .advice-icon {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 95%;
+            background-color: $advice-number;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 50%;
+
+            &:hover {
+                transform: scale(1.4);
+                box-shadow:
+                    0 0 .5rem $advice-number,
+                    inset 0 0 .5rem $advice-number,
+                    0 0 2rem $advice-number,
+                    inset 0 0 2rem $advice-number;
+                    border: none;
+            }
+
+            img {
+                width: 50%;
+                height: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-device) {
+        .advice-container{
+            width: 250px;
+            min-width: 250px;
+            max-width: 250px;
+            gap: 1rem;
+            padding: 1rem;
+
+            .advice-number {
+                font-size: 0.6rem;
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
+            }
+            .advice-para {
+                line-height: 1.4rem;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 700;
+            }
+            .pattern-line {
+                width: 80%;
+            }
+        }
+}
